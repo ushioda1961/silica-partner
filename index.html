@@ -4,135 +4,162 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>水溶性ケイ素を、扱ってみませんか｜株式会社ユープランニング</title>
-<meta name="description" content="19年間、水溶性ケイ素というひとつの素材だけを扱ってきました。卸すだけでなく、売り方も一緒に考えます。加盟金・権利金は0円。まずは30分、話を聞いてください。">
+<meta name="description" content="十九年間、水溶性ケイ素というひとつの素材だけを扱ってきました。卸すだけでなく、売り方も一緒に考えます。初期費用は0円。まずは三十分、話を聞いてください。">
 <meta property="og:title" content="水溶性ケイ素を、扱ってみませんか">
-<meta property="og:description" content="19年間、ひとつの素材だけを扱ってきました。卸すだけでなく、売り方も一緒に考えます。">
+<meta property="og:description" content="十九年間、ひとつの素材だけを扱ってきました。卸すだけでなく、売り方も一緒に考えます。">
 <meta property="og:type" content="website">
 <style>
   :root{
-    --navy:#16273f; --navy2:#1e3352; --ink:#22303f; --body:#3d4b5a;
-    --cream:#fbf8f3; --line:#e3dcd0; --gold:#b8892c; --gold-l:#d9b05c;
-    --white:#fff; --mute:#8a8478;
+    --paper:#fffaf5;
+    --peach:#fdeee2;
+    --pink:#fbe7ea;
+    --card:#ffffff;
+    --line:#f2e2d6;
+    --coral:#e8734a;
+    --coral-d:#cf5b34;
+    --rose:#e0708c;
+    --gold:#e3a75c;
+    --ink:#4c3a33;
+    --body:#6f5c53;
+    --mute:#a08d82;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{
-    margin:0; background:var(--cream); color:var(--body);
+    margin:0; background:var(--paper); color:var(--body);
     font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,system-ui,sans-serif;
-    font-size:16px; line-height:1.9; letter-spacing:.02em;
+    font-size:16px; line-height:2.0; letter-spacing:.03em;
     -webkit-text-size-adjust:100%;
   }
-  img,iframe{max-width:100%}
-  .wrap{width:100%; max-width:760px; margin:0 auto; padding:0 22px}
-  h1,h2,h3{color:var(--ink); line-height:1.5; letter-spacing:.01em}
-  strong{color:var(--ink)}
-  section{padding:56px 0}
-  .lead{font-size:1.06rem}
+  img,svg,iframe{max-width:100%}
+  .wrap{max-width:720px; margin:0 auto; padding:0 24px}
+  .mincho{font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","MS PMincho",serif}
+  h1,h2,h3{color:var(--ink); line-height:1.6; letter-spacing:.02em; font-weight:600}
+  strong{color:var(--coral-d); font-weight:700}
+  p{margin:0 0 1.2em}
+  section{padding:60px 0}
 
   /* ---------- hero ---------- */
-  .hero{background:var(--navy); color:#e8eef6; padding:52px 0 46px}
+  .hero{
+    background:
+      radial-gradient(1000px 460px at 12% -8%, #fff5ec 0%, rgba(255,245,236,0) 62%),
+      radial-gradient(900px 460px at 100% 8%, #fbe4ea 0%, rgba(251,228,234,0) 60%),
+      linear-gradient(168deg,#fdeee2 0%, #fdf3ea 46%, #fbe8ec 100%);
+    padding:44px 0 44px; position:relative; overflow:hidden;
+  }
   .hero .eyebrow{
-    font-size:.82rem; letter-spacing:.14em; color:var(--gold-l);
-    margin:0 0 18px; font-weight:700;
+    display:inline-block; background:#fff; color:var(--coral-d);
+    font-size:.78rem; letter-spacing:.1em; font-weight:700;
+    padding:7px 16px; border-radius:999px; margin:0 0 22px;
+    box-shadow:0 2px 10px rgba(200,140,110,.13);
   }
-  .hero h1{
-    color:#fff; font-size:2rem; margin:0 0 20px; line-height:1.45; font-weight:800;
+  .hero h1{font-size:2.05rem; margin:0 0 18px; line-height:1.55; font-weight:600}
+  .hero h1 em{font-style:normal; color:var(--coral-d)}
+  .hero .sub{font-size:1.02rem; color:var(--body); margin:0 0 24px; line-height:1.95}
+  .hero .pts{margin:0; padding:0; list-style:none}
+  .hero .pts li{position:relative; padding-left:26px; margin:0 0 8px; font-size:.97rem}
+  .hero .pts li::before{
+    content:""; position:absolute; left:2px; top:.72em; width:9px; height:9px;
+    border-radius:50%; background:var(--coral); opacity:.75;
   }
-  .hero h1 .sm{display:block; font-size:1.15rem; font-weight:600; color:#b9c9dd; margin-top:14px; line-height:1.7}
-  .hero p{color:#c3d0df; margin:0 0 8px}
-  .hero .rule{width:58px; height:3px; background:var(--gold); margin:26px 0}
+  .heroart{display:block; margin:26px auto 0; width:min(300px,78%)}
 
   /* ---------- video ---------- */
-  .videobox{background:var(--navy2); padding:40px 0 46px; color:#dfe7f0}
-  .videobox h2{color:#fff; font-size:1.32rem; margin:0 0 6px}
-  .videobox .note{color:#9fb2c8; font-size:.9rem; margin:0 0 22px}
-  .ratio{position:relative; width:100%; padding-top:56.25%; background:#0d1826; border-radius:8px; overflow:hidden}
+  .videobox{background:#fff6ef; padding:52px 0}
+  .ratio{position:relative; width:100%; padding-top:56.25%; background:#f0e2d6;
+         border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(190,140,110,.16)}
   .ratio iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
-  .placeholder{
-    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
-    text-align:center; color:#7f93aa; font-size:.9rem; padding:24px; line-height:1.8;
-  }
+  .placeholder{position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+    text-align:center; color:#b39c8c; font-size:.88rem; padding:24px; line-height:1.9}
 
-  /* ---------- blocks ---------- */
-  h2.sec{font-size:1.45rem; margin:0 0 8px; font-weight:800}
-  .sub{color:var(--mute); font-size:.92rem; margin:0 0 26px; letter-spacing:.06em}
-  p{margin:0 0 1.15em}
+  /* ---------- headings ---------- */
+  h2.sec{font-size:1.5rem; margin:0 0 10px; text-align:center; font-weight:600}
+  .sub-en{color:var(--gold); font-size:.74rem; letter-spacing:.22em;
+          text-align:center; margin:0 0 8px; font-weight:700}
+  .deco{display:block; margin:0 auto 30px; width:72px}
 
-  .card{
-    background:var(--white); border:1px solid var(--line); border-radius:10px;
-    padding:26px 24px; margin:0 0 16px;
-  }
-  .card h3{margin:0 0 10px; font-size:1.1rem}
+  /* ---------- cards ---------- */
+  .card{background:var(--card); border-radius:18px; padding:28px 26px; margin:0 0 16px;
+        box-shadow:0 4px 20px rgba(200,150,120,.10)}
+  .card h3{margin:0 0 12px; font-size:1.1rem; display:flex; align-items:center; gap:10px}
+  .card h3 svg{flex:0 0 auto}
   .card p:last-child{margin-bottom:0}
 
-  .facts{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:26px 0 0}
-  .fact{background:var(--white); border:1px solid var(--line); border-radius:10px; padding:20px 16px; text-align:center}
-  .fact .n{display:block; font-size:1.7rem; font-weight:800; color:var(--navy); line-height:1.2}
-  .fact .t{display:block; font-size:.86rem; color:var(--mute); margin-top:8px}
+  .facts{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:28px 0 0}
+  .fact{background:#fff; border-radius:16px; padding:22px 12px; text-align:center;
+        box-shadow:0 4px 16px rgba(200,150,120,.10)}
+  .fact .n{display:block; font-size:1.75rem; font-weight:700; color:var(--coral-d); line-height:1.2}
+  .fact .t{display:block; font-size:.83rem; color:var(--mute); margin-top:8px; letter-spacing:.04em}
 
-  .fit{border-left:4px solid var(--gold); background:var(--white); padding:22px 22px; border-radius:0 10px 10px 0; margin:0 0 14px}
-  .fit.no{border-left-color:#b6bcc4}
-  .fit h3{margin:0 0 12px; font-size:1.05rem}
-  .fit ul{margin:0; padding-left:1.2em}
-  .fit li{margin:0 0 .5em}
+  /* ---------- fit ---------- */
+  .fit{background:#fff; border-radius:18px; padding:26px; margin:0 0 16px;
+       box-shadow:0 4px 20px rgba(200,150,120,.10)}
+  .fit.yes{border-top:5px solid var(--coral)}
+  .fit.no{border-top:5px solid #d9c8bd}
+  .fit h3{margin:0 0 14px; font-size:1.06rem}
+  .fit ul{margin:0; padding:0; list-style:none}
+  .fit li{position:relative; padding-left:26px; margin:0 0 .7em}
+  .fit.yes li::before{content:"◯"; position:absolute; left:0; top:0; color:var(--coral); font-weight:700; font-size:.9em}
+  .fit.no li::before{content:"—"; position:absolute; left:2px; top:0; color:#c3b0a4}
 
+  /* ---------- steps ---------- */
   .steps{counter-reset:s; margin:26px 0 0; padding:0; list-style:none}
-  .steps li{
-    counter-increment:s; position:relative; padding:0 0 26px 52px; margin:0;
-  }
+  .steps li{counter-increment:s; position:relative; padding:0 0 26px 56px}
   .steps li::before{
-    content:counter(s); position:absolute; left:0; top:0;
-    width:34px; height:34px; border-radius:50%; background:var(--navy); color:#fff;
+    content:counter(s); position:absolute; left:0; top:0; width:38px; height:38px;
+    border-radius:50%; background:linear-gradient(140deg,var(--coral),var(--rose)); color:#fff;
     display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.95rem;
+    box-shadow:0 3px 10px rgba(232,115,74,.28);
   }
-  .steps li::after{
-    content:""; position:absolute; left:17px; top:38px; bottom:6px; width:1px; background:var(--line);
-  }
+  .steps li::after{content:""; position:absolute; left:19px; top:44px; bottom:4px; width:2px;
+    background:#f3e0d4; border-radius:2px}
   .steps li:last-child{padding-bottom:0}
   .steps li:last-child::after{display:none}
-  .steps b{display:block; color:var(--ink); font-size:1.05rem; margin-bottom:4px}
-  .steps span{font-size:.95rem}
+  .steps b{display:block; color:var(--ink); font-size:1.05rem; margin-bottom:4px; font-weight:600}
+  .steps span{font-size:.95rem; line-height:1.9}
 
-  details{background:var(--white); border:1px solid var(--line); border-radius:10px; padding:0; margin:0 0 10px}
-  summary{cursor:pointer; padding:18px 20px; font-weight:700; color:var(--ink); list-style:none}
+  /* ---------- faq ---------- */
+  details{background:#fff; border-radius:14px; margin:0 0 12px;
+          box-shadow:0 3px 14px rgba(200,150,120,.09)}
+  summary{cursor:pointer; padding:20px 22px; font-weight:700; color:var(--ink);
+          list-style:none; font-size:.98rem}
   summary::-webkit-details-marker{display:none}
-  summary::after{content:"＋"; float:right; color:var(--gold); font-weight:700}
+  summary::after{content:"＋"; float:right; color:var(--coral); font-weight:700}
   details[open] summary::after{content:"－"}
-  details .a{padding:0 20px 20px; font-size:.96rem}
+  details .a{padding:0 22px 22px; font-size:.95rem}
 
   /* ---------- cta ---------- */
-  .cta{background:var(--navy); color:#dbe4ef; padding:52px 0 56px}
-  .cta h2{color:#fff; font-size:1.5rem; margin:0 0 14px}
-  .cta p{color:#bccbdb}
+  .cta{background:linear-gradient(165deg,#fdeee2,#fbe4ea); padding:56px 0 60px; text-align:center}
+  .cta h2{font-size:1.5rem; margin:0 0 14px}
   .btn{
-    display:block; width:100%; text-align:center; background:var(--gold); color:#fff;
-    text-decoration:none; font-weight:800; font-size:1.12rem; padding:20px 18px;
-    border-radius:8px; margin:26px 0 12px; letter-spacing:.04em;
-    box-shadow:0 6px 18px rgba(0,0,0,.22);
+    display:block; text-align:center; background:linear-gradient(135deg,var(--coral),#ef8a5f);
+    color:#fff; text-decoration:none; font-weight:700; font-size:1.1rem; padding:21px 18px;
+    border-radius:999px; margin:28px 0 12px; letter-spacing:.05em;
+    box-shadow:0 10px 24px rgba(232,115,74,.32);
   }
-  .btn:hover{background:var(--gold-l)}
-  .cta .small{font-size:.86rem; color:#93a6bb; text-align:center; margin:0}
+  .btn:hover{filter:brightness(1.05)}
+  .small{font-size:.85rem; color:var(--mute)}
 
-  .quiet{background:var(--white); border:1px solid var(--line); border-radius:10px; padding:22px; font-size:.93rem}
+  .quiet{background:#fff; border-radius:18px; padding:24px; font-size:.92rem;
+         box-shadow:0 4px 18px rgba(200,150,120,.10)}
 
-  footer{background:#101c2e; color:#7f8fa3; padding:34px 0 44px; font-size:.85rem}
-  footer a{color:#9fb2c8}
+  footer{background:#fdf2ea; color:var(--mute); padding:34px 0 46px; font-size:.82rem}
 
-  .sticky{
-    position:sticky; bottom:0; z-index:20; background:rgba(22,39,63,.96);
-    padding:12px 22px; box-shadow:0 -4px 16px rgba(0,0,0,.18);
-  }
-  .sticky a{
-    display:block; max-width:716px; margin:0 auto; text-align:center; background:var(--gold);
-    color:#fff; text-decoration:none; font-weight:800; padding:15px; border-radius:8px;
-  }
+  .sticky{position:sticky; bottom:0; z-index:20; background:rgba(255,250,245,.94);
+    padding:11px 20px; box-shadow:0 -3px 16px rgba(200,150,120,.16);
+    backdrop-filter:saturate(1.2) blur(6px)}
+  .sticky a{display:block; max-width:660px; margin:0 auto; text-align:center;
+    background:linear-gradient(135deg,var(--coral),#ef8a5f); color:#fff; text-decoration:none;
+    font-weight:700; padding:15px; border-radius:999px; box-shadow:0 6px 16px rgba(232,115,74,.3)}
 
   @media(min-width:700px){
     body{font-size:17px}
-    .hero h1{font-size:2.5rem}
-    h2.sec{font-size:1.7rem}
-    section{padding:70px 0}
+    .hero{padding:60px 0 56px}
+    .hero h1{font-size:2.7rem}
+    h2.sec{font-size:1.85rem}
+    section{padding:80px 0}
     .facts{grid-template-columns:repeat(4,1fr)}
+    .heroart{width:340px; margin-top:30px}
   }
 </style>
 </head>
@@ -141,61 +168,91 @@
 <!-- ============ HERO ============ -->
 <div class="hero">
   <div class="wrap">
-    <p class="eyebrow">サロン・治療院・自営でお仕事をされている方、これから起業される方へ</p>
-    <h1>水溶性ケイ素を、<br>扱ってみませんか。
-      <span class="sm">十九年間、この一つの素材だけを扱ってきました。<br>卸すだけでなく、売り方も一緒に考えます。</span>
-    </h1>
-    <div class="rule"></div>
-    <p>初期費用は、いっさいありません。加盟金も、権利金も、保証金も。</p>
-    <p>まずは三十分、話を聞いていただくところからです。</p>
+    <span class="eyebrow">サロン・治療院・自営でお仕事をされている方へ</span>
+    <h1 class="mincho">水溶性ケイ素を、<br><em>扱ってみませんか。</em></h1>
+    <p class="sub">
+      十九年間、この一つの素材だけを扱ってきました。<br>
+      卸すだけでなく、<strong>売り方も一緒に考えます。</strong>
+    </p>
+    <ul class="pts">
+      <li>初期費用は、いっさいありません</li>
+      <li>加盟金も、権利金も、保証金も</li>
+      <li>まずは三十分、話を聞いていただくところから</li>
+    </ul>
+
+    <!-- 伝える人の絵 -->
+    <svg class="heroart" viewBox="0 0 340 190" fill="none" xmlns="http://www.w3.org/2000/svg"
+         stroke="#e8734a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="96" cy="52" r="21" fill="#fff"/>
+      <path d="M75 52c0-14 9-24 21-24s21 10 21 24" fill="#fdd9c6" stroke="none"/>
+      <circle cx="96" cy="52" r="21"/>
+      <path d="M75 50c2-16 10-24 21-24s19 8 21 24c-6-6-13-9-21-9s-15 3-21 9z" fill="#f6b394" stroke="none"/>
+      <path d="M96 73v10"/>
+      <path d="M64 160v-38c0-17 14-30 32-30s32 13 32 30v38" fill="#fff"/>
+      <path d="M64 160v-38c0-17 14-30 32-30s32 13 32 30v38"/>
+      <circle cx="244" cy="58" r="19" fill="#fff"/>
+      <path d="M225 58c0-13 8-21 19-21s19 8 19 21" fill="#f9c9d3" stroke="none"/>
+      <circle cx="244" cy="58" r="19" stroke="#e0708c"/>
+      <path d="M244 77v9" stroke="#e0708c"/>
+      <path d="M215 160v-34c0-16 13-28 29-28s29 12 29 28v34" fill="#fff" stroke="#e0708c"/>
+      <path d="M160 92c6-10 20-10 26 0 5 9-4 18-13 25-9-7-18-16-13-25z" fill="#fbd7de" stroke="#e0708c"/>
+      <path d="M150 66l4 8 8 4-8 4-4 8-4-8-8-4 8-4z" fill="#e3a75c" stroke="none"/>
+      <path d="M196 52l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#e3a75c" stroke="none"/>
+      <path d="M28 168h284" stroke="#f0cdb8"/>
+    </svg>
   </div>
 </div>
 
 <!-- ============ VIDEO ============ -->
 <div class="videobox">
   <div class="wrap">
-    <h2>その前に、五分だけ。</h2>
-    <p class="note">セミナーの最後に、必ずお話ししていることです。</p>
+    <p class="sub-en">MESSAGE</p>
+    <h2 class="sec mincho">その前に、五分だけ。</h2>
+    <svg class="deco" viewBox="0 0 72 12" fill="none"><path d="M2 6h20M50 6h20" stroke="#f0cdb8" stroke-width="2" stroke-linecap="round"/><path d="M36 1l2.6 5.3L44 8l-5.4 1.7L36 15l-2.6-5.3L28 8l5.4-1.7z" fill="#e3a75c"/></svg>
+    <p style="text-align:center; margin:-14px 0 24px; font-size:.93rem; color:var(--mute)">
+      セミナーの最後に、必ずお話ししていることです。
+    </p>
     <div class="ratio">
-      <!-- ★牛さんへ：YouTubeに「限定公開」でアップし、動画IDを VIDEO_ID の部分に入れてください -->
+      <!-- ★牛さんへ：YouTubeにアップして、動画IDを VIDEO_ID の部分に入れてください -->
       <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0" title="シリカを伝える想い" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div class="placeholder">［ここに動画が入ります］<br>YouTubeに限定公開でアップして、動画IDを差し替えてください</div>
+      <div class="placeholder">［ここに動画が入ります］<br>YouTubeにアップして、動画IDを差し替えてください</div>
     </div>
-    <p style="margin:22px 0 0; font-size:.95rem; color:#b9c9dd">
+    <p style="margin:24px 0 0; font-size:.93rem">
       この五分で「なんとなく分かった」と思っていただけたら、それで十分です。<br>
       もう少し聞いてみたい方は、
-      <a href="https://www.youtube.com/@m_ushioda" style="color:#d9b05c; font-weight:700">こちらに五百本以上あります</a>。
+      <a href="https://www.youtube.com/@m_ushioda" style="color:var(--coral-d); font-weight:700">こちらに五百本以上あります</a>。
       セミナーの切り抜きです。急ぎませんので、見てから決めてください。
     </p>
   </div>
 </div>
 
-
-<!-- ============ 資格の条件（早めに出す） ============ -->
-<section style="background:#f4efe6">
+<!-- ============ 条件 ============ -->
+<section style="background:linear-gradient(180deg,#fffaf5,#fdf3ec)">
   <div class="wrap">
-    <h2 class="sec">先に、お伝えしておきます。</h2>
-    <p class="sub">CONDITIONS</p>
-    <p class="lead">
-      <strong>お申し込みいただければ、どなたでも扱える</strong>——というものでは、ありません。
+    <p class="sub-en">CONDITIONS</p>
+    <h2 class="sec mincho">先に、お伝えしておきます。</h2>
+    <svg class="deco" viewBox="0 0 72 12" fill="none"><path d="M2 6h20M50 6h20" stroke="#f0cdb8" stroke-width="2" stroke-linecap="round"/><path d="M36 1l2.6 5.3L44 8l-5.4 1.7L36 15l-2.6-5.3L28 8l5.4-1.7z" fill="#e3a75c"/></svg>
+
+    <p style="text-align:center; font-size:1.05rem">
+      <strong>お申し込みいただければ、どなたでも扱える</strong><br>——というものでは、ありません。
     </p>
-    <p>
-      お取扱いいただくまでに、<strong>三つ</strong>、していただくことがあります。
-      あとから知って驚かれないように、先にお伝えしておきます。
+    <p style="text-align:center">
+      お取扱いいただくまでに、三つ、していただくことがあります。<br>
+      あとから知って驚かれないように、先にお伝えしておきますね。
     </p>
 
-    <ol class="steps" style="margin-top:30px">
+    <ol class="steps" style="margin-top:34px">
       <li><b>セミナーを受けていただく</b>
         <span>東京・大阪・名古屋で定期的に開いています。僕が直接お話しします。</span></li>
       <li><b>工場を見に来ていただく</b>
         <span>つくっているところを、全工程お見せします。扱っていただく方には、必ず一度見ていただいています。</span></li>
       <li><b>認定講習を受け、認定試験に合格していただく</b>
         <span><strong>受講費・受験料は無料です。</strong>知らないまま売っていただくわけにはいかないので。<br>
-        講習は<strong>動画</strong>です。お申し込みいただくと視聴用のURLをお送りしますので、ご都合のよいときにご覧ください。
+        講習は<strong>動画</strong>。お申し込みいただくと視聴用のURLをお送りしますので、ご都合のよいときに。
         試験は<strong>月に一度、ZOOMで一時間ほど</strong>。ご自宅から受けていただけます。</span></li>
     </ol>
 
-    <div class="card" style="margin-top:26px">
+    <div class="card" style="margin-top:28px; background:linear-gradient(150deg,#fff,#fff7f1)">
       <p style="margin:0">
         手間はかかります。ただ、<strong>ここまで来ていただいた方は、迷いがありません。</strong>
         だから、お客様にもまっすぐ伝わります。
@@ -209,9 +266,29 @@
 <!-- ============ なぜ ============ -->
 <section>
   <div class="wrap">
-    <h2 class="sec">僕が、女性にばかり話している理由</h2>
-    <p class="sub">WHY</p>
-    <p class="lead">
+    <p class="sub-en">WHY</p>
+    <h2 class="sec mincho">僕が、女性にばかり<br>話している理由</h2>
+    <svg class="deco" viewBox="0 0 72 12" fill="none"><path d="M2 6h20M50 6h20" stroke="#f0cdb8" stroke-width="2" stroke-linecap="round"/><path d="M36 1l2.6 5.3L44 8l-5.4 1.7L36 15l-2.6-5.3L28 8l5.4-1.7z" fill="#e3a75c"/></svg>
+
+    <!-- 親子の絵 -->
+    <svg style="display:block; margin:0 auto 26px; width:min(240px,66%)" viewBox="0 0 240 150" fill="none"
+         stroke="#e0708c" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="92" cy="40" r="20" fill="#fff"/>
+      <path d="M72 40c0-13 9-22 20-22s20 9 20 22c-6-6-12-9-20-9s-14 3-20 9z" fill="#f9c9d3" stroke="none"/>
+      <circle cx="92" cy="40" r="20"/>
+      <path d="M92 60v8"/>
+      <path d="M64 132V96c0-15 12-27 28-27s28 12 28 27v36" fill="#fff"/>
+      <path d="M64 132V96c0-15 12-27 28-27s28 12 28 27v36"/>
+      <circle cx="158" cy="72" r="14" fill="#fff" stroke="#e8734a"/>
+      <path d="M144 72c0-9 6-15 14-15s14 6 14 15c-4-4-9-6-14-6s-10 2-14 6z" fill="#fdd9c6" stroke="none"/>
+      <circle cx="158" cy="72" r="14" stroke="#e8734a"/>
+      <path d="M158 86v6" stroke="#e8734a"/>
+      <path d="M138 132v-24c0-11 9-20 20-20s20 9 20 20v24" fill="#fff" stroke="#e8734a"/>
+      <path d="M120 104h18" stroke="#e8734a"/>
+      <path d="M28 138h184" stroke="#f0cdb8"/>
+    </svg>
+
+    <p>
       今の社会をつくったのは、僕らの年代です。政治家を選んだのも、僕らです。
       便利にはなりましたが、そのぶん、失ったものもたくさんありました。
     </p>
@@ -224,9 +301,7 @@
       <strong>子どもたちが「ここに生まれてきてよかった」と思える形で、次の世代にバトンを渡したい。</strong>
       それが、僕の大きなテーマです。
     </p>
-    <p>
-      水溶性ケイ素は、そのための一つのアイテムに過ぎません。
-    </p>
+    <p>水溶性ケイ素は、そのための一つのアイテムに過ぎません。</p>
     <p>
       ただ、<strong>子どもに飲ませてあげられるのは、女性の方だけ</strong>なんです。
       僕がどれだけ知識を持っていても、よそのお子さんに直接あげることはできません。
@@ -236,34 +311,41 @@
 </section>
 
 <!-- ============ 差別化 ============ -->
-<section style="background:#f4efe6">
+<section style="background:linear-gradient(180deg,#fdf3ec,#fff6ef)">
   <div class="wrap">
-    <h2 class="sec">卸すだけでは、ありません。</h2>
-    <p class="sub">WHAT WE DO</p>
+    <p class="sub-en">WHAT WE DO</p>
+    <h2 class="sec mincho">卸すだけでは、ありません。</h2>
+    <svg class="deco" viewBox="0 0 72 12" fill="none"><path d="M2 6h20M50 6h20" stroke="#f0cdb8" stroke-width="2" stroke-linecap="round"/><path d="M36 1l2.6 5.3L44 8l-5.4 1.7L36 15l-2.6-5.3L28 8l5.4-1.7z" fill="#e3a75c"/></svg>
 
     <div class="card">
-      <h3>売り方を、一緒に考えます</h3>
+      <h3>
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#e8734a" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h18v12H12l-5 4v-4H4z"/><path d="M9 11h8M9 14h5"/></svg>
+        売り方を、一緒に考えます
+      </h3>
       <p>
         商材を仕入れても、売れなければ意味がありません。
         僕は卸をしながら、<strong>販売のしかたそのものを、ずっとお伝えしてきました。</strong>
         年間百回以上、セミナーでお話ししているのは、その中身です。
       </p>
-      <p style="margin-bottom:0">
-        「良いものを、売り込まずに、伝える」。それだけです。押し売りは、いっさい教えません。
-      </p>
+      <p style="margin-bottom:0">「良いものを、売り込まずに、伝える」。それだけです。押し売りは、いっさい教えません。</p>
     </div>
 
     <div class="card">
-      <h3>つくり方を、全部お見せしています</h3>
+      <h3>
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#e8734a" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V11l7-4 7 4v11"/><path d="M17 22V13l6 3v6z"/><path d="M8 22v-5h4v5"/></svg>
+        つくり方を、全部お見せしています
+      </h3>
       <p style="margin-bottom:0">
         工場見学会を定期的に開いていて、<strong>製造の全工程を公開しています。</strong>
         隠すところがないので、見ていただくのがいちばん早いと思っています。
-        扱っていただく方には、必ず一度、見に来ていただいています。
       </p>
     </div>
 
     <div class="card">
-      <h3>安全性は、第三者機関で確かめています</h3>
+      <h3>
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#e8734a" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3l8 3v6c0 5-3.4 9.1-8 11-4.6-1.9-8-6-8-11V6z"/><path d="M9.5 12.5l2.5 2.5 5-5"/></svg>
+        安全性は、第三者機関で確かめています
+      </h3>
       <p style="margin-bottom:0">
         日本食品分析センターでの急性経口毒性試験（OECDガイドライン420準拠）、
         皮膚一次刺激性試験（同404準拠）。
@@ -276,7 +358,7 @@
       <div class="fact"><span class="n">19年</span><span class="t">この素材ひとすじ</span></div>
       <div class="fact"><span class="n">0円</span><span class="t">初期費用</span></div>
       <div class="fact"><span class="n">100%</span><span class="t">製造工程を公開</span></div>
-      <div class="fact"><span class="n">100回<span style="font-size:.7em">超/年</span></span><span class="t">セミナー・講演</span></div>
+      <div class="fact"><span class="n">100<span style="font-size:.6em">回超/年</span></span><span class="t">セミナー・講演</span></div>
     </div>
   </div>
 </section>
@@ -284,22 +366,23 @@
 <!-- ============ 向き不向き ============ -->
 <section>
   <div class="wrap">
-    <h2 class="sec">こういう方と、ご一緒したいです</h2>
-    <p class="sub">FIT</p>
+    <p class="sub-en">FIT</p>
+    <h2 class="sec mincho">こういう方と、<br>ご一緒したいです</h2>
+    <svg class="deco" viewBox="0 0 72 12" fill="none"><path d="M2 6h20M50 6h20" stroke="#f0cdb8" stroke-width="2" stroke-linecap="round"/><path d="M36 1l2.6 5.3L44 8l-5.4 1.7L36 15l-2.6-5.3L28 8l5.4-1.7z" fill="#e3a75c"/></svg>
 
-    <div class="fit">
+    <div class="fit yes">
       <h3>ご一緒できる方（ここは条件です）</h3>
       <ul>
         <li><strong>すでにサロンや治療院を経営しておられる方</strong></li>
         <li><strong>自営でお仕事をされている方</strong></li>
         <li><strong>これから起業して、自営を目指しておられる方</strong></li>
       </ul>
-      <p style="margin:14px 0 0; font-size:.93rem">
+      <p style="margin:16px 0 0; font-size:.92rem">
         お仕事として扱っていただく形になりますので、<strong>お客様とお話しする場をお持ちであること</strong>が前提になります。
       </p>
     </div>
 
-    <div class="fit">
+    <div class="fit yes">
       <h3>こういう方に、いちばん向いています</h3>
       <ul>
         <li>大事な人に、良いと思ったものを伝えたい方</li>
@@ -317,22 +400,21 @@
         <li><strong>ご自身が安く買うために、契約だけを希望される方</strong></li>
         <li>お仕事としてではなく、<strong>ご家庭の中だけでお使いになりたい方</strong></li>
       </ul>
-      <p style="margin:12px 0 0; font-size:.93rem">
+      <p style="margin:16px 0 0; font-size:.92rem">
         ご家庭でお使いになりたい方は、お客様としてお求めいただくのがいちばんです。
-        お近くの販売者をご案内しますので、その旨をお書きください。
-      </p>
-      <p style="margin:12px 0 0; font-size:.93rem">
-        応募いただいた方すべてと契約する、ということはしていません。お互いのために、そこは正直にお伝えしています。
+        お近くの販売者をご案内しますので、その旨をお書きください。<br>
+        なお、応募いただいた方すべてと契約する、ということはしていません。お互いのために、そこは正直にお伝えしています。
       </p>
     </div>
   </div>
 </section>
 
 <!-- ============ 流れ ============ -->
-<section style="background:#f4efe6">
+<section style="background:linear-gradient(180deg,#fff6ef,#fdeee7)">
   <div class="wrap">
-    <h2 class="sec">ご相談から、お取扱いまで</h2>
-    <p class="sub">FLOW</p>
+    <p class="sub-en">FLOW</p>
+    <h2 class="sec mincho">ご相談から、お取扱いまで</h2>
+    <svg class="deco" viewBox="0 0 72 12" fill="none"><path d="M2 6h20M50 6h20" stroke="#f0cdb8" stroke-width="2" stroke-linecap="round"/><path d="M36 1l2.6 5.3L44 8l-5.4 1.7L36 15l-2.6-5.3L28 8l5.4-1.7z" fill="#e3a75c"/></svg>
     <ol class="steps">
       <li><b>お問い合わせ</b><span>下のボタンから。一分ほどで終わります。</span></li>
       <li><b>ZOOMで三十分</b><span>僕が直接お話しします。商品のこと、売り方のこと、なんでも聞いてください。売り込みはしません。<br>
@@ -350,14 +432,20 @@
 <!-- ============ FAQ ============ -->
 <section>
   <div class="wrap">
-    <h2 class="sec">よくいただくご質問</h2>
-    <p class="sub">FAQ</p>
+    <p class="sub-en">FAQ</p>
+    <h2 class="sec mincho">よくいただくご質問</h2>
+    <svg class="deco" viewBox="0 0 72 12" fill="none"><path d="M2 6h20M50 6h20" stroke="#f0cdb8" stroke-width="2" stroke-linecap="round"/><path d="M36 1l2.6 5.3L44 8l-5.4 1.7L36 15l-2.6-5.3L28 8l5.4-1.7z" fill="#e3a75c"/></svg>
 
     <details><summary>費用はどのくらいかかりますか</summary>
-      <div class="a">加盟金・権利金・保証金は、いっさいいただいていません。かかるのは商品の仕入れ代金だけです。<br>ただし、お取扱いの目安として <strong>年間六十万円（月にすると五万円ほど）以上の仕入れ</strong>をお願いしています。仕入れの単位や条件は、ZOOMでご説明します。</div></details>
+      <div class="a">加盟金・権利金・保証金は、いっさいいただいていません。かかるのは商品の仕入れ代金だけです。<br>
+      ただし、お取扱いの目安として <strong>年間六十万円（月にすると五万円ほど）以上の仕入れ</strong>をお願いしています。
+      仕入れの単位や条件は、ZOOMでご説明します。</div></details>
 
     <details><summary>ノルマはありますか</summary>
-      <div class="a"><strong>売上のノルマはありません。</strong>ただ、お取扱いの目安として、年間六十万円（月にすると五万円ほど）以上の仕入れをお願いしています。<br><br>これは「売ってください」という数字ではありません。実際に伝える活動をしてくださっているかどうかの目安として、<strong>全体会議で、販売者のみなさんとメーカーのスタッフで話し合って決めた数字</strong>です。<br><br>もともとは決めていませんでした。ただ、ご自身が安く買うためだけにご契約を希望される方が増えてしまったので、線を引かせていただくことにしました。</div></details>
+      <div class="a"><strong>売上のノルマはありません。</strong>ただ、お取扱いの目安として、年間六十万円（月にすると五万円ほど）以上の仕入れをお願いしています。<br><br>
+      これは「売ってください」という数字ではありません。実際に伝える活動をしてくださっているかどうかの目安として、
+      <strong>全体会議で、販売者のみなさんとメーカーのスタッフで話し合って決めた数字</strong>です。<br><br>
+      もともとは決めていませんでした。ただ、ご自身が安く買うためだけにご契約を希望される方が増えてしまったので、線を引かせていただくことにしました。</div></details>
 
     <details><summary>すぐに扱えますか</summary>
       <div class="a">いいえ。<strong>セミナーの受講／工場見学／認定講習と認定試験</strong>——この三つを受けていただいてから、になります。<br><br>
@@ -372,8 +460,7 @@
       合格された方には、<strong>名刺型の認定証</strong>をお渡しします。</div></details>
 
     <details><summary>ネットワークビジネスですか</summary>
-      <div class="a"><strong>いいえ、まったく違います。</strong>
-      人を紹介して会員を増やす、というしくみではありません。<br><br>
+      <div class="a"><strong>いいえ、まったく違います。</strong>人を紹介して会員を増やす、というしくみではありません。<br><br>
       商品を仕入れていただき、ご自身のお客様に販売していただく、<strong>ふつうの卸売</strong>です。
       どなたかを勧誘していただく必要は、いっさいありません。</div></details>
 
@@ -392,24 +479,31 @@
       <strong>うちの商品のことは、一〇〇パーセントお話しします。比較は、そちらでなさってください。</strong></div></details>
 
     <details><summary>売り方が分かりません</summary>
-      <div class="a">そこを一緒に考えるのが、僕の仕事だと思っています。卸すだけの会社ではありません。セミナーや勉強会にも、いつでも参加していただけます。</div></details>
+      <div class="a">そこを一緒に考えるのが、僕の仕事だと思っています。卸すだけの会社ではありません。
+      セミナーや勉強会にも、いつでも参加していただけます。</div></details>
 
     <details><summary>効果を説明して売ってもいいですか</summary>
-      <div class="a">いいえ。健康食品なので、効き目を言い切ることは法律で認められていません。「良いものを、売り込まずに、伝える」やり方をお伝えしています。</div></details>
+      <div class="a">いいえ。健康食品なので、効き目を言い切ることは法律で認められていません。
+      「良いものを、売り込まずに、伝える」やり方をお伝えしています。</div></details>
   </div>
 </section>
 
 <!-- ============ CTA ============ -->
 <div class="cta" id="form">
   <div class="wrap">
-    <h2>まずは三十分、聞いてください。</h2>
+    <svg style="display:block; margin:0 auto 18px; width:64px" viewBox="0 0 64 64" fill="none"
+         stroke="#e8734a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="16" width="48" height="34" rx="8" fill="#fff"/>
+      <path d="M8 24l24 15 24-15"/>
+      <path d="M46 10l1.8 3.7L52 15.5l-4.2 1.8L46 21l-1.8-3.7L40 15.5l4.2-1.8z" fill="#e3a75c" stroke="none"/>
+    </svg>
+    <h2 class="mincho">まずは三十分、<br>聞いてください。</h2>
     <p>
-      その場で決めていただく必要は、まったくありません。
+      その場で決めていただく必要は、まったくありません。<br>
       話を聞いて、合わないと思われたら、そう言ってください。それで大丈夫です。
     </p>
-    <!-- ★牛さんへ：https://select-type.com/e/?id=MUag9ZmfraM を、お問い合わせフォーム（Googleフォーム等）のURLに差し替えてください -->
     <a class="btn" href="https://select-type.com/e/?id=MUag9ZmfraM">ZOOMで話を聞いてみる（無料）</a>
-    <p class="small">入力は一分ほど。折り返し、日程のご相談をさせていただきます。</p>
+    <p class="small" style="margin:0">入力は一分ほど。折り返し、日程のご相談をさせていただきます。</p>
   </div>
 </div>
 
@@ -417,7 +511,7 @@
 <section>
   <div class="wrap">
     <div class="quiet">
-      <p style="margin:0 0 10px"><strong>株式会社ユープランニング　牛王田 雅章（うしおうだ まさあき）</strong></p>
+      <p style="margin:0 0 10px"><strong style="color:var(--ink)">株式会社ユープランニング　牛王田 雅章（うしおうだ まさあき）</strong></p>
       <p style="margin:0">
         水溶性ケイ素の卸売および普及活動。年間百回以上のセミナー・講演。
         雑誌「ザ・フナイ」掲載。工場見学会を定期開催し、製造の全工程を公開しています。
@@ -429,7 +523,7 @@
 <footer>
   <div class="wrap">
     <p style="margin:0 0 8px">株式会社ユープランニング</p>
-    <p style="margin:0; font-size:.8rem; line-height:1.8">
+    <p style="margin:0; font-size:.78rem; line-height:1.9">
       ※本ページは、水溶性ケイ素のお取扱いをご検討される事業者の方に向けたご案内です。<br>
       ※健康食品であり、医薬品ではありません。疾病の診断・治療・予防を目的としたものではありません。
     </p>
@@ -437,7 +531,6 @@
 </footer>
 
 <div class="sticky">
-  <!-- ★https://select-type.com/e/?id=MUag9ZmfraM を差し替えてください -->
   <a href="https://select-type.com/e/?id=MUag9ZmfraM">ZOOMで話を聞いてみる（無料）</a>
 </div>
 
