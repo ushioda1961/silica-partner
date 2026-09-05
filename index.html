@@ -161,11 +161,14 @@
 
     .voice .q{font-weight:700;color:var(--coral-d);margin:0 0 .2em;font-size:.98rem}
     .voice .who{text-align:right;color:#8a7166;font-size:.95rem;margin-bottom:0}
+    .lead-photo{margin:26px 0 30px}
+    .lead-photo img{width:100%;border-radius:20px;display:block;box-shadow:0 10px 30px rgba(190,120,90,.18)}
+    .lead-photo figcaption{font-size:.92rem;color:#8a7166;margin-top:10px;text-align:center}
     .gallery{display:grid;grid-template-columns:1fr;gap:16px;margin-top:26px}
     .gallery figure{margin:0}
     .gallery img{width:100%;border-radius:18px;display:block}
     .gallery figcaption{font-size:.92rem;color:#8a7166;margin-top:8px;text-align:center}
-    @media(min-width:760px){.gallery{grid-template-columns:1fr 1fr}}
+    @media(min-width:760px){.gallery{grid-template-columns:1fr 1fr 1fr}}
 </style>
 </head>
 <body>
@@ -426,22 +429,47 @@
 </section>
 
 
-<!-- ★素材待ち：セミナー・工場見学の写真
-     LP素材\写真_* に画像が入ったら、このコメントを外して img を差し替える。
-     横位置・明るいもの。3〜6枚。
-<section>
+<!-- ============ 写真 ============ -->
+<section style="background:#fff6ef">
   <div class="wrap">
     <p class="sub-en">WITH US</p>
     <h2 class="sec mincho">ひとりで、<br>やっていません。</h2>
     <svg class="deco" viewBox="0 0 76 14" fill="none"><path d="M2 7h20M54 7h20" stroke="#f0cdb8" stroke-width="2" stroke-linecap="round"/><path d="M38 1l2.8 5.6L46 8l-5.2 1.4L38 15l-2.8-5.6L30 8l5.2-1.4z" fill="#d9964a"/></svg>
-    <p>全国でセミナーを開いています。工場は、全工程を見ていただけます。</p>
+
+    <figure class="lead-photo">
+      <img src="img/meeting.jpg" alt="販売者の集まり・集合写真" loading="lazy">
+      <figcaption>販売者の集まり（シリカエバンジェリストミーティング）</figcaption>
+    </figure>
+
+    <p>
+      全国でセミナーを開いています。<br>
+      <strong>ここにあなたのお客様をお連れいただいて、一緒にお伝えすることができます。</strong>
+      ひとりで説明しきらなくて、大丈夫です。
+    </p>
+
     <div class="gallery">
-      <figure><img src="img/seminar1.jpg" alt="セミナーのようす"><figcaption>セミナー</figcaption></figure>
-      <figure><img src="img/factory1.jpg" alt="工場見学"><figcaption>工場見学</figcaption></figure>
+      <figure>
+        <img src="img/seminar-hall.jpg" alt="セミナー会場のようす" loading="lazy">
+        <figcaption>セミナーには、毎回たくさんの方が来てくださいます</figcaption>
+      </figure>
+      <figure>
+        <img src="img/seminar-talk.jpg" alt="セミナーで話しているところ" loading="lazy">
+        <figcaption>商品のことも、使い方も、こちらでお話しします</figcaption>
+      </figure>
+      <figure>
+        <img src="img/small-kai.jpg" alt="小さなお話し会" loading="lazy">
+        <figcaption>小さなお話し会から始める方も、たくさんおられます</figcaption>
+      </figure>
     </div>
+
+    <p style="margin-bottom:0">
+      工場も、<strong>全工程を公開しています。</strong>
+      ご希望の方には見学していただけますので、
+      「自分の目で見たものを売りたい」という方にこそ、来ていただきたいと思っています。
+    </p>
   </div>
 </section>
--->
+
 <!-- ============ シリカライフ ============ -->
 <section>
   <div class="wrap">
