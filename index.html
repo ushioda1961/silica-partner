@@ -164,11 +164,11 @@
     .lead-photo{margin:26px 0 30px}
     .lead-photo img{width:100%;border-radius:20px;display:block;box-shadow:0 10px 30px rgba(190,120,90,.18)}
     .lead-photo figcaption{font-size:.92rem;color:#8a7166;margin-top:10px;text-align:center}
-    .gallery{display:grid;grid-template-columns:1fr;gap:16px;margin-top:26px}
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
     .gallery figure{margin:0}
     .gallery img{width:100%;border-radius:18px;display:block}
-    .gallery figcaption{font-size:.92rem;color:#8a7166;margin-top:8px;text-align:center}
-    @media(min-width:760px){.gallery{grid-template-columns:1fr 1fr 1fr}}
+    .gallery figcaption{font-size:.86rem;color:#8a7166;margin-top:8px;text-align:center}
+    @media(min-width:760px){.gallery{grid-template-columns:1fr 1fr 1fr; gap:16px}}
 </style>
 </head>
 <body>
@@ -425,13 +425,25 @@
 </section>
 
 
-<!-- ============ 流れ ============ -->
-<section style="background:linear-gradient(180deg,#fdf3ec,#fff6ef)">
+
+<!-- ============ もっと詳しく ============ -->
+<section style="background:linear-gradient(180deg,#fffaf5,#fdf3ec)">
   <div class="wrap">
-    <p class="sub-en">FLOW</p>
-    <h2 class="sec mincho">ご相談から、お取扱いまで</h2>
+    <p class="sub-en">READ MORE</p>
+    <h2 class="sec mincho">もう少し、<br>詳しく知りたい方へ</h2>
     <svg class="deco" viewBox="0 0 76 14" fill="none"><path d="M2 7h20M54 7h20" stroke="#f0cdb8" stroke-width="2" stroke-linecap="round"/><path d="M38 1l2.8 5.6L46 8l-5.2 1.4L38 15l-2.8-5.6L30 8l5.2-1.4z" fill="#d9964a"/></svg>
-    <ol class="steps">
+    <p class="center" style="color:var(--mute); font-size:1.02rem; margin-bottom:28px">
+      気になるところだけ、開いてご覧ください。
+    </p>
+
+    <details class="read">
+      <summary>お問い合わせのあと、どう進みますか（全7ステップ）</summary>
+      <div class="a">
+        <p style="margin-top:0">
+          お問い合わせから、お取扱いを始めていただくまでの流れです。
+          <strong>途中でやめていただいて、まったく構いません。</strong>
+        </p>
+<ol class="steps">
       <li><b>お問い合わせ</b><span>下のボタンから。一分ほどで終わります。</span></li>
       <li><b>ZOOMで三十分</b><span>僕が直接お話しします。
         <strong>いまのお仕事に、この素材が合うかどうか。合うとしたら、どう取り入れるのがいいか。</strong>
@@ -444,18 +456,8 @@
         受講費・受験料は無料です。合格された方には名刺型の認定証をお渡しします。</span></li>
       <li><b>お取扱い開始</b><span>初期費用はありません。お取扱いの目安として、年間六十万円（月にすると五万円ほど）以上の仕入れをお願いしています。</span></li>
     </ol>
-  </div>
-</section>
-
-<!-- ============ もっと詳しく ============ -->
-<section style="background:linear-gradient(180deg,#fffaf5,#fdf3ec)">
-  <div class="wrap">
-    <p class="sub-en">READ MORE</p>
-    <h2 class="sec mincho">もう少し、<br>詳しく知りたい方へ</h2>
-    <svg class="deco" viewBox="0 0 76 14" fill="none"><path d="M2 7h20M54 7h20" stroke="#f0cdb8" stroke-width="2" stroke-linecap="round"/><path d="M38 1l2.8 5.6L46 8l-5.2 1.4L38 15l-2.8-5.6L30 8l5.2-1.4z" fill="#d9964a"/></svg>
-    <p class="center" style="color:var(--mute); font-size:1.02rem; margin-bottom:28px">
-      気になるところだけ、開いてご覧ください。
-    </p>
+      </div>
+    </details>
 
     <details class="read">
       <summary>工場を、見に来てください（見学レポート）</summary>
